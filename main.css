@@ -27,12 +27,14 @@ span{
     padding-left: 30rem;
     padding-top: 1.5rem;
     padding-bottom: 1.5rem;
+    border-radius: 1rem;
 
 }
 
 .navbar a {
     text-decoration: none;
     margin-left: 1rem;
+
     
 }
 
@@ -47,11 +49,10 @@ span{
     width: 5rem;
     margin-left: 1rem;
     margin-top: 1rem; 
-    position: fixed;
+    position:absolute;
     float: left;
     top: 0;
     left: 0;
-    
 
  
 }
