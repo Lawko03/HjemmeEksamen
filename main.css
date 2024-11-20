@@ -19,19 +19,17 @@ h1 {
 .navbar {
     background-color: #2C363F; /* Ny mørk farge */
     display: flex;
-    justify-content: right;
-    padding-right: 3rem;
-    padding-left: 30rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
+    justify-content:flex-end;
+    padding: 1.5rem 2rem 1.5rem;
     border-radius: 1rem;
-    justify-content: space-between;
-    padding: 1.5rem 3rem;
+   
 }
 
 .navbar a {
     text-decoration: none;
-    margin-left: 1rem;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3rem;
     color: #F2F5EA; /* Lys tekst */
 }
 
