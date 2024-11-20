@@ -22,6 +22,15 @@ h1 {
     text-align: center;
 }
 
+body > h2 {
+    margin-left: 2rem;
+}
+
+body > p {
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
 /* Navbar styling */
 .navbar {
     background-color: #2C363F; 
@@ -29,18 +38,17 @@ h1 {
     justify-content:flex-end;
     padding: 1.5rem 2rem 1.5rem;
     border-radius: 1rem;
-   
+    margin: 2rem;
+    margin-top: 1rem;
 }
 
 .navbar a {
     text-decoration: none;
     margin-left: 1rem;
-
-
     display: flex;
     justify-content: space-between;
     margin-right: 3rem;
-    color: #F2F5EA; /* Lys tekst */
+    color: #F2F5EA; 
 }
 
 .navbar a:hover {
@@ -51,14 +59,14 @@ h1 {
 .navbar img {
     height: 3rem;
     width: 5rem;
-    margin-left: 1rem;
-    margin-top: 1rem; 
+    margin-left: 2.6rem;
+    margin-top: 1.5rem; 
     position:absolute;
     float: left;
     top: 0;
     left: 0;
     width: auto;
-    margin-right: 1rem;
+    border-radius: 1rem;
 }
 
 /* Praktisk info styling */
@@ -98,8 +106,6 @@ h1 {
 
 /*------ ACTIVITY PAGE------*/
 
-/* Gjør sportsBox til en klikkbar lenke */
-
 .sportsContainer {
     display: flex;
     flex-wrap: wrap;
@@ -108,36 +114,33 @@ h1 {
 
 .sportsBox {
     background-color: #D6DBD2;
-    border: 0.0625rem solid #ccc; 
-    border-radius: 0.625rem; 
+    border: 0.05rem solid #ccc; 
+    border-radius: 1rem; 
     box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1); 
-    padding: 0.9375rem; 
-    text-align: left;
-    width: 15.625rem; 
+    padding: 1rem; 
+    width: 15.5rem; 
     transition: transform 0.2s, box-shadow 0.2s;
     text-decoration: none; 
     color: inherit; 
     display: block; 
-    margin: 1rem;
+    margin: auto;
+    margin-top: 1rem;
 }
 
 .sportsBox:hover {
     transform: scale(1.05);
-    box-shadow: 0 0.375rem 0.625rem rgba(0, 0, 0, 0.15); 
+    box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.15); 
     background-color: #E75A7C; 
     color: #F2F5EA;
 }
 
 .sportsBox img {
     max-width: 100%;
-    border-radius: 0.625rem; 
-    margin-bottom: 0rem; 
-    width: 200rem;
-    height: ;
+    border-radius: 1rem; 
 }
 
 .sportsBox h3 {
-    margin: 0.625rem 0;
+    margin: 0.6rem 0;
     font-size: 1.2rem;
     color: #2C363F;
 }
