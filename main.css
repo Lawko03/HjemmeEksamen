@@ -7,6 +7,7 @@
 /* Root font size */
 html {
     font-size: 16px; 
+    background-color: #F2F5EA;
 }
 
 /* Body styling */
@@ -29,14 +30,13 @@ h1 {
     justify-content:flex-end;
     padding: 1.5rem 2rem 1.5rem;
     border-radius: 1rem;
+    margin-top: 0.5rem;
    
 }
 
 .navbar a {
     text-decoration: none;
     margin-left: 1rem;
-
-    
     display: flex;
     justify-content: space-between;
     margin-right: 3rem;
@@ -59,37 +59,54 @@ h1 {
     left: 0;
     width: auto;
     margin-right: 1rem;
+    border-radius: 1rem;
+}
+
+/* main page styling */
+#main {
+    margin: 2rem;
+
 }
 
 /* Praktisk info styling */
 .praktisk_info {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 2rem 13% 2rem 13%;
+    padding: 1rem 0rem 1rem 0rem;
+    background-color:#2c363f;
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    color: white;
+    
 }
 
-.praktisk_info li {
-    margin-right: 1rem;
-    display: inline-block;
+.praktisk_info th, td {
+    width: 8rem;
+    text-align: center;
 }
 
 /* Bachelorprogram styling */
 #Bachelorprogram {
     font-size: 1.5rem;
     font-style: italic;
-    margin-left: 5%;
+    display:inline;
+    margin-left: 45%;
 }
 
 /* Introbilde styling */
 #introbilde {
     width: 100%;
     max-width: 75%;
-    margin: 0 auto;
+    margin: auto;
+    display: block;
+    border-radius: 1rem;
+    padding: 1rem;
+    background-color:#2c363f;
 }
 
 /* Oppsummering styling */
 #oppsummering {
-    margin: 5%;
+    margin: 2.5;
     font-size: 1.2rem;
     padding: 2rem 0;
     border-top: 0.0625rem solid #2C363F; 
@@ -136,3 +153,4 @@ h1 {
     color: #555;
     font-size: 0.9rem;
 }
+
