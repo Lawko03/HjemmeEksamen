@@ -1,120 +1,135 @@
-*{
-    font-family: Arial;
-
+/* Global styling */
+* {
+    font-family: Arial, sans-serif;
 }
 
-h1{
-
-    font-size: 55;
-    margin-left: 5%; 
-    margin-top: 5%;
-
+/* Body styling */
+body {
+    background-color: #F2F5EA;
 }
 
-span{
-
-
-    font-weight: 1000;
-
-
+/* H1 styling */
+h1 {
+    font-size: 55px;
+    margin: 2% auto;
+    text-align: center;
 }
 
-.navbar{
-    background-color: rgb(45, 137, 218);
+/* Navbar styling */
+.navbar {
+    background-color: #2C363F; /* Ny mørk farge */
     display: flex;
-    justify-content: right;
-    padding-right: 3rem;
-    padding-left: 30rem;
-    padding-top: 1.5rem;
-    padding-bottom: 1.5rem;
-
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
 }
 
 .navbar a {
     text-decoration: none;
     margin-left: 1rem;
-    
+    color: #F2F5EA; /* Lys tekst */
 }
 
 .navbar a:hover {
-    text-decoration: none;
-    background-color: red;
-    
+    color: #E75A7C; /* Rosa-rød aksent */
+    background-color: transparent;
 }
 
 .navbar img {
     height: 3rem;
-    width: 5rem;
-    margin-left: 1rem;
-    margin-top: 1rem; 
-    position: fixed;
-    float: left;
-    top: 0;
-    left: 0;
-    
-
- 
+    width: auto;
+    margin-right: 1rem;
 }
 
-
-.praktisk_info{
-
-
-    
-    list-style-type:none; 
+/* Praktisk info styling */
+.praktisk_info {
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
-.praktisk_info span {
-
-    border-bottom: 1px solid;
-}
-.praktisk_info p{margin-top: 10%;}
-.praktisk_info li{
-
-    margin-right: 1%;
-
+.praktisk_info li {
+    margin-right: 1rem;
     display: inline-block;
-
-
-    margin: 3em;
 }
 
-
-
+/* Bachelorprogram styling */
 #Bachelorprogram {
-
-    font-size: 150%;
-
-    font-style: oblique;
-
-    margin-left:5%; 
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-left: 5%;
 }
 
-
+/* Introbilde styling */
 #introbilde {
-
-
-
-    width: 75%; 
-    margin: 7%;
+    width: 100%;
+    max-width: 75%;
+    margin: 0 auto;
 }
 
-
-
+/* Oppsummering styling */
 #oppsummering {
-
     margin: 5%;
-
-    font-size: 120%;
-    padding-top: 3%;
-
-    padding-bottom: 3%;
-
-    border-top: 1px solid #000;
-
-    border-bottom: 1px solid #000;
+    font-size: 1.2rem;
+    padding: 2% 0;
+    border-top: 1px solid #2C363F;
+    border-bottom: 1px solid #2C363F;
 }
 
-/*----- ACTIVITY PAGE --------------------------------*/
+/*------ ACTIVITY PAGE------*/
 
+/* Sport-container layout */
+.sportsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+    padding: 20px;
+    background-color: #F2F5EA;
+}
 
+/* Sports-box styling */
+.sportsBox {
+    background-color: #D6DBD2;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    text-align: center;
+    width: 250px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.sportsBox:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.sportsBox img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.sportsBox h3 {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #2C363F;
+}
+
+.sportsBox p {
+    color: #555;
+    font-size: 0.9em;
+}
+
+.sportsBox a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #E75A7C;
+    font-weight: bold;
+}
+
+.sportsBox a:hover {
+    color: #2C363F;
+    text-decoration: underline;
+}
