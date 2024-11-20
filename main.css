@@ -26,14 +26,21 @@ h1 {
 .navbar {
     background-color: #2C363F; 
     display: flex;
-    justify-content: space-between;
-    padding: 1.5rem 3rem;
+    justify-content:flex-end;
+    padding: 1.5rem 2rem 1.5rem;
+    border-radius: 1rem;
+   
 }
 
 .navbar a {
     text-decoration: none;
     margin-left: 1rem;
-    color: #F2F5EA; 
+
+    
+    display: flex;
+    justify-content: space-between;
+    margin-right: 3rem;
+    color: #F2F5EA; /* Lys tekst */
 }
 
 .navbar a:hover {
@@ -43,6 +50,13 @@ h1 {
 
 .navbar img {
     height: 3rem;
+    width: 5rem;
+    margin-left: 1rem;
+    margin-top: 1rem; 
+    position:absolute;
+    float: left;
+    top: 0;
+    left: 0;
     width: auto;
     margin-right: 1rem;
 }
