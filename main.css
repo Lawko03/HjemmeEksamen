@@ -206,3 +206,63 @@ cite {
     margin-top: 0%;
     font-size: 0.5rem;
 }
+
+/* Generell styling for tidslinje */
+#timeline {
+    margin: 2rem 0;
+    text-align: center;
+}
+
+#timeline h2 {
+    font-size: 2rem; 
+    margin-bottom: 1rem; 
+    color: #2C363F;
+}
+
+/* Horisontal tidslinje */
+.timeline-horizontal {
+    display: flex;
+    overflow-x: auto; /* Horisontal scrolling */
+    gap: 1rem; 
+    padding: 1rem; 
+    list-style: none; /* Fjerner listepunkter */
+    scrollbar-color: #E75A7C #F2F5EA; 
+}
+
+/* Styling for hvert element */
+.timeline-horizontal li {
+    flex: 0 0 auto; /* Hindrer at elementene krymper */
+    background-color: #D6DBD2;
+    border-radius: 1rem; 
+    padding: 1rem; 
+    min-width: 12.5rem; 
+    box-shadow: 0 0.25rem 0.4rem rgba(0, 0, 0, 0.1); 
+    text-align: left;
+}
+
+.timeline-horizontal li span {
+    font-weight: bold;
+    color: #E75A7C;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-horizontal li p {
+    margin: 0;
+    font-size: 1rem;
+    color: #2C363F;
+}
+
+/* Scrollbar for Chrome og Safari */
+.timeline-horizontal::-webkit-scrollbar {
+    height: 0.5rem; 
+}
+
+.timeline-horizontal::-webkit-scrollbar-thumb {
+    background: #E75A7C;
+    border-radius: 0.5rem; 
+}
+
+.timeline-horizontal::-webkit-scrollbar-track {
+    background: #F2F5EA;
+}
