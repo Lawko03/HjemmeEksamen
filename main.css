@@ -89,7 +89,12 @@ body > p {
     width: 8rem;
     text-align: center;
     border-bottom: 0.1rem solid;
-    border-radius: 0.5rem;
+    padding: 0.3rem;
+}
+
+tbody {
+    padding: 1rem;
+
 }
 
 /* Bachelorprogram styling */
