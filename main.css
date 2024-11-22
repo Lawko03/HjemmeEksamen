@@ -288,3 +288,33 @@ cite {
 .timeline-horizontal::-webkit-scrollbar-track {
     background: #F2F5EA;
 }
+
+/*-----------footer----------*/
+/* Footer styling */
+footer {
+    background-color: #2C363F;
+    color: #F2F5EA;
+    padding: 1rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.footer-content {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+footer nav {
+    margin-top: 1.5rem;
+}
+
+footer nav a {
+    color: #F2F5EA;
+    text-decoration: none;
+    margin: 0 1rem;
+    transition: color 0.2s;
+}
+
+footer nav a:hover {
+    color: #E75A7C;
+}
