@@ -71,7 +71,7 @@ body > p {
     border-radius: 1rem;
 }
 
-@media (max-width: 25rem) {
+@media (max-width: 600px) {
     img {
         display:none; 
     }
@@ -340,14 +340,12 @@ cite {
 /*-----------footer----------*/
 /* Footer styling */
 footer {
+    width: 100%;
     background-color: #2C363F;
     color: #F2F5EA;
-    padding: 1rem;
+    padding: 2rem;
     text-align: center;
     margin-top: 2rem;
-}
-
-.footer-content {
     font-size: 1rem;
     line-height: 1.5;
 }
