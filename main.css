@@ -6,7 +6,7 @@
 
 /* Root font size */
 html {
-    font-size: 16px; 
+    font-size: 1rem; 
 }
 
 /* Body styling */
@@ -17,7 +17,7 @@ body {
 
 /* H1 styling */
 h1 {
-    font-size: 3.4375rem; 
+    font-size: 3.5rem; 
     margin: 2rem auto;
     text-align: center;
 }
@@ -71,9 +71,63 @@ body > p {
     border-radius: 1rem;
 }
 
-@media (max-width: 25rem) {
-    img {
-        display:none; 
+@media (max-width: 48rem) { /* 768px */
+    /* Navigasjonsmenyen */
+    .navbar {
+        flex-direction: column; /* Gjør menyen vertikal */
+        align-items: center; 
+        padding: 1rem; 
+    }
+
+    .navbar a {
+        margin: 0.5rem 0; 
+    }
+
+    /* Sportsboksene */
+    .sportsContainer {
+        flex-direction: column; /* Viser boksene som en kolonne */
+        gap: 1rem; 
+    }
+
+    .sportsBox {
+        max-width: 90%; 
+        margin: 0 auto; /* Sentraliser boksene */
+    }
+
+    /* Tidslinjen */
+    .timeline-horizontal {
+        flex-direction: column; 
+        overflow-x: visible; /* Fjerner horisontal scrolling */
+    }
+
+    .timeline-horizontal li {
+        min-width: 100%; /* Gjør tidslinje-elementene bredere */
+        margin-bottom: 1rem; 
+    }
+
+    /* Tekstjustering */
+    h1 {
+        font-size: 2.5rem; 
+    }
+
+    p {
+        font-size: 1rem; 
+        line-height: 1.6; 
+    }
+
+    /* Footer */
+    footer {
+        padding: 2rem; 
+    }
+
+    footer nav {
+        display: flex;
+        flex-direction: column; /* Legg lenkene i én kolonne */
+        align-items: center;
+    }
+
+    footer nav a {
+        margin: 0.5rem 0;
     }
 }
 
@@ -182,8 +236,8 @@ tbody {
 /*------ ACTIVITY PAGE------*/
 
 .sportsContainer {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); /* Responsiv grid */
     gap: 2rem;
     margin: 2rem;
 }
@@ -217,11 +271,13 @@ tbody {
 
 .sportsBox h3 {
     margin: 0.6rem 0;
-    color: #2C363F;
+    color: inherit;
 }
 
 .sportsBox p {
-    color: #555;
+    color: inherit;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
 
 cite {
@@ -264,7 +320,7 @@ cite {
 
 .timeline-horizontal li span {
     font-weight: bold;
-    color: #E75A7C;
+    color: inherit;
     display: block;
     margin-bottom: 0.5rem;
 }
