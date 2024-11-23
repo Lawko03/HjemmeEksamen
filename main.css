@@ -146,6 +146,11 @@ tbody {
     border-bottom: 0.0625rem solid #2C363F; 
 }
 
+.mellomlegg h2{
+    margin-left:10%;
+    margin: 5%;
+}
+
 .mellomleggTekst {
     display: flex;
     justify-content: center;
@@ -157,7 +162,7 @@ tbody {
 
 }
 
-.hva_lærer_du, .slik_søker_du, .program_detaljer .emneTable {
+.hva_lærer_du, .slik_søker_du, .program_detaljer{
     background-color: #2c363f;
     border-radius: 1rem; 
     box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1); 
@@ -180,10 +185,49 @@ tbody {
 
 }
 
+
+#fagligLeder{
+    vertical-align: left;
+    display: inline;
+    width: 80px;
+
+}
+
+.altStudier ul, .altStuder a{
+
+    display: flex;
+    justify-content: center;
+
+
+}
+.altStudier li {
+
+
+    display: inline;
+    border-right:1px #000;
+
+    padding-left: 1rem;
+
+    list-style-type: disc;
+
+
+}
+
+.altStudier a{
+
+    margin-left: 3rem;
+}
 /*-------Emne Tabell Styling------*/
 
+
+.emneTable caption{
+    font-size: 32px;
+    justify-content: left;
+    font-weight: 1000;
+}
 .emneTable{
     overflow-x: auto;
+    padding: 3rem;
 }
 
 .EmneGruppe{
@@ -197,7 +241,7 @@ tbody {
 .emneTable table{
 
     margin: 5rem;
-    width: 85%;
+    width: 75%;
     border-radius: 10%;
 }
 
@@ -206,8 +250,9 @@ tbody {
 .emneTable thead {
     background-color: #0e1012;
     font-weight: 300;
+    
 } 
-.emneTable td, tr, th{
+.emneTable td, .emneTable tr,.emneTable th{
 
     padding: 1rem;
     padding-top: 3rem;
@@ -215,7 +260,6 @@ tbody {
     padding-bottom: 3rem;
     padding-left: 2.5rem;
     color:#F2F5EA;
-    justify-content: flex-start;
     border-radius: 10px;
     
 
@@ -226,6 +270,7 @@ tbody {
     font-weight: 5000;
     flex-wrap: wrap;
 }
+
    
 /*------ ACTIVITY PAGE------*/
 
