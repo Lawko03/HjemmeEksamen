@@ -1,3 +1,3 @@
 # HjemmeEksamen
 
-Eksamen I 1200 
+Eksamen I DATA1200 
