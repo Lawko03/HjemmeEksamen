@@ -364,7 +364,7 @@ tbody {
     padding-top: 3rem;
     padding-bottom: 3rem;
     border-radius: 1rem;
-    color:#E75A7C;
+    color: #F2F5EA;
 }
 
 .emneTable a{
@@ -526,12 +526,13 @@ footer nav a:hover {
 
 
 .accessibilityImages {
-    max-width: 75%;
+    max-width: 45%;
 }
 
  #webAIMExamples{
 
-   width : 25rem;
+   max-width : 45%;
+   display: inline;
 
 
 }
