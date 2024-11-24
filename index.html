@@ -2,11 +2,12 @@
 <html>
 <head>
     <title>HjemmeSide</title>
-    <meta lang = "en">
+    <meta lang = "no">
     <meta charset="utf-8">
     <link rel="stylesheet" href="./main.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- Navbar brukt på alle sidene for navigasjon -->
     <nav class="navbar">
         <a href="index.html"><img id="OslometLogo" src="Images\oslometLogo.png" alt="Oslomet Logo"></a>
         <a href="index.html">Home</a>
@@ -22,7 +23,9 @@
         <h1>Matematisk modellering og datavitenskap – ingeniør</h1>
         
         <p id = "Bachelorprogram">Bachelorprogram</p>
+
     <section class="infoTable">
+        <!-- Table for praktisk informasjon -->
             <table class="praktisk_info">
                 <tr>
                     <th>Studiested</th>
@@ -46,13 +49,13 @@
     </section>   
             <img id = "introbilde" src="https://www.oslomet.no/var/oslomet/storage/images/1/0/2/1/391201-36-nor-NO/17197440d538-matematisk-modellering-datavitenskap-bachelor.jpg" alt="studenter jobber med problemløsning"  >
     
-        
         <section class = "mellomlegg">
             <p class="mellomleggTekst">Få innsikt i matematiske modeller og datadrevne metoder som kan løse mange praktiske og samfunnsnyttige oppgaver.</p>
         </section>
         
-        
+<!-- Hoved delen av index pagen -->
 <section class="mainSection">
+    <!-- Program detaljer seksjon -->
         <section class = "program_detaljer">    
             <div class = "Opptakskrav"> 
                 <h2> Opptakskrav og poeng </h2>
@@ -71,8 +74,8 @@
                     </p>
             </div>
         </section>
-        
-        <section class = "slik_søker_du">
+        <!-- Infomrasjon om studie -->
+        <section class = "program_detaljer">
             <div class="Opptakskrav">
                 <h2>Slik søker du</h2>
                     <p>Du søker på Samordna opptak med studiekode 215 503.</p>
@@ -117,8 +120,9 @@
 </section>
 
 
-
-<section class = "emneTable">
+<!-- Emne seksjon -->
+<section class = "emneTableContainer">
+    <!-- Table for alle emner -->
     <table class = "emneTable">
 
         <tbody>
@@ -597,11 +601,10 @@
 </section>
 <section scope ="Hva koster det?" class = "program_detaljer">
 
-
     <h2>  Hva Koster det?</h2>
     <a href="https://student.oslomet.no/semesteravgift">
         Du betaler en semesteravgift hvert semester (student.oslomet.no)</a>
-    <p><a href="https://student.oslomet.no/studieavgift-for-internasjonale-studenter-utenfor-eu-eos" class="a-link ezrichtext"></p>
+    <a href="https://student.oslomet.no/studieavgift-for-internasjonale-studenter-utenfor-eu-eos" class="a-link ezrichtext">
         <span>Er du internasjonal student fra utenfor EU og EØS, må du betale studieavgift (student.oslomet.no).</span></a>
          <p>Det er mulig å søke om unntak for betaling av denne studieavgiften.</p>
 
@@ -631,7 +634,7 @@
 
 
     <h2>Videre Studiemuligheter</h2>
-    <h3><a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi">Anvendt data- og informasjonsteknologi(ACIT)</a></h2>
+    <span><a href="https://www.oslomet.no/studier/tkd/anvendt-data-informasjonsteknologi">Anvendt data- og informasjonsteknologi(ACIT)</a></span>
     <p>Masterprogram 2 år | Pilestredet i Oslo | Heltid</p>
 
 </section>
@@ -639,7 +642,7 @@
 <section scope = "Studiested" class = "mellomlegg">
 
     <h2>Studiested</h2>
-    <a href="https://www.oslomet.no/om/studiested-pilestredet" class = "mellomlegg">Studiestedet Pilestredet</a>
+    <a href="https://www.oslomet.no/om/studiested-pilestredet">Studiestedet Pilestredet</a>
 
 </section>
 
@@ -647,7 +650,7 @@
 <section scope = "Spørsmål om utdanningen?" class = "mellomlegg">
 
     <h2>Spørsmål om utdanningen?</h2>
-    <a href="https://www.oslomet.no/kontaktskjema#Jeg%20vil%20bli%20student" class = "mellomlegg">Har du spørsmål om utdanningen, kontakt oss Gjennom vårt kontaktskjema</a>
+    <a href="https://www.oslomet.no/kontaktskjema#Jeg%20vil%20bli%20student">Har du spørsmål om utdanningen, kontakt oss Gjennom vårt kontaktskjema</a>
 
 </section>
 
@@ -656,13 +659,13 @@
 
 
     <h2>Faglig Leder</h2>
-        <a href="https://www.oslomet.no/om/ansatt/krhel3944/">
+        <a id=fagligLeder href="https://www.oslomet.no/om/ansatt/krhel3944/">
         <img id=fagligLeder src="https://gw-oslomet.intark.uh-it.no/ansattbilde/krhel3944" alt="Bilde av Faglig Leder, Kristoffer Herland Hellton">
 
-        <span>Kristoffer Herland Hellton</span> 
+        Kristoffer Herland Hellton </a>
         <p  id=fagligLeder>Førstemanuensis</p>  
    
-</a>
+
 <p>+47 672 37 240 | kristoffer.hellton@oslomet.no </p>
 
 </section>
@@ -670,10 +673,10 @@
 
 <section scope = "altStudie" class = "altStudie">
 
-    <h2 class = "altStudie">Du er kanskje også interessert i disse?</h2>
+    <h2>Du er kanskje også interessert i disse?</h2>
 
     <div id="altStudierBeholder">
-
+        <!-- Liste over andre studier -->
             <ul class="altStudieOuter">
                 <li>
                     <a href="https://www.oslomet.no/studier/tkd/anvendt-datateknologi">Anvendt datateknologi</a>
@@ -796,8 +799,6 @@
 <div scope = "student historier" class = "studenthistorier"> 
     
     <div class = studentGrid >
-
-
         <img id = "studentHist" src="https://www.oslomet.no/var/oslomet/storage/images/_aliases/xxxlarge/1/6/4/1/401461-1-nor-NO/613c6efdb147-matematikk_oslomet_smilefjes.jpg" alt="To glade data studenter står med laptop">
         
     </div>

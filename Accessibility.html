@@ -3,7 +3,7 @@
 <head>
 
     <title>Accessibility</title>
-    <meta lang = "en">
+    <meta lang = "no">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="main.css">
@@ -20,9 +20,96 @@
 
 
 <body>
-<h1>Bros Cookin</h1>
-<a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"> hahaha</a>
-<img src="Images/professional-cook.jpg" alt="han cooker" width="600" height="400">
+
+
+     
+
+
+    <h1> Accessibility</h1>
+
+
+
+
+    <div scope = "Funksjonalitet" class = "program_detaljer">
+
+        <h2>Funksjonalitet</h2>
+
+
+        <p> Vi tenkte på funskjonalitet i henhold til side strukturen.</p>
+        <p>En del av det var å gjore det mulig å nå alle sider fra alle andre sider</p>
+        <p>Vi løste dette med en navigasjons meny som er på toppen og bunnen av hver side</p>
+
+        <img class = "accessibilityImages" src="./Images/Accessibillity/navbar.png"  alt="Picture of navigation bar">
+
+
+        <p> All teksten og linkene må være lagt ut på en logisk måte slik at man kann nå det med keyboard eller skjerm lesere. </p>
+        <p> Dette innebærer også at man tagger html elementer med riktig klasse og scope</p>
+
+    </div>
+
+    
+
+    <div scope = "Tilgjengelighet" class = "program_detaljer">
+
+        <h2>Tilgjengelighet</h2>
+
+
+
+        <p>Alle bildene har alternativ tekst. Dette gjør det lettere å forstå siden for de med nestatt syns evner.</p>
+        <p> Ved å ha alternativ tekster på bilder så kann mennesker lese disse teksene med en skjerm leser og forstå innholde. </p>
+    
+        <img src="./Images/Accessibillity/alt-tekst1.png" class = "accessibilityImages" alt="Eksempel på alternativ teksting på bilde elementer i html">
+       <img src="./Images/Accessibillity/alt-tekst3.png" class = "accessibilityImages" alt="Eksempel på alternativ teksting på bilde elementer i html">
+
+       <p>Videre så bruker vi scope = row for a kjennetegne et nytt rad i tabell elementer:</p>
+       <p>Ved a legge in scope = row for hvert nye rad så kan man skille mellom hvert nye rad.</p>
+       <img src="./Images/Accessibillity/scope=row.png" class = "accessibilityImages" alt="Eksempel på scope = row i tabell elementer (Html beskrivelse)">
+
+
+    
+    
+    </div>
+
+
+
+
+    <div scope = "User friendly" class = "program_detaljer">
+        <h2>Brukervennlighet</h2>
+
+            <p>En av de største utfordringene med hensyn til universiell utforming var akkuratt dette med brukervennelighet</p>
+            <p>Etter å ha lagt til en god del CSS så matte vi endre den orginale planlagte farge kombinasjonen da den ikke hadde stor nok kontrast mellom de ulike fargene. </p>
+
+            <img src="./Images/Accessibillity/Non-accessible-palette.png" id = "webAIMExamples"  alt="Ikke brukker vennelig fargepalette sett fra webAIM kontrastsjekkingsverktøy ">
+
+            <img src="./Images/Accessibillity/accessile-palette.png" id = "webAIMExamples" alt="Ikke brukker vennelig fargepalette sett fra webAIM kontrastsjekkingsverktøy ">
+
+
+
+
+        <p>I tilegg til fargesjekk så brukte vi Wave plugin på siden og sjekket siden på mobil.</p>
+        <p>Dette gjør at vi får oversikt på de forskjellige limitasjonene som siden stiller med og veiledning på hvordan vi kan gjøre siden mer Brukervennlig.</p>
+
+        <img src="./Images/Accessibillity/wavePlugin.png" width = "25%"  alt="Wave plugin">
+
+
+            <!-- <https://webaim.org/resources/contrastchecker/ -->
+
+
+
+       
+    </div>
+
+
+
+
+
+
+
+
+    </div>
+
+
+
 
 
 
