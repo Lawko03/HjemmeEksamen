@@ -572,4 +572,19 @@ footer nav a:hover {
    display: inline;
 
 }
+.github-bilder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem auto;
+    max-width: 75rem;
+    padding: 1rem;
+}
 
+.github-bilder img {
+    width: 100%;
+    max-width: 50rem;
+    height: auto;
+    border-radius: 0.5rem;
+}
