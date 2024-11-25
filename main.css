@@ -90,7 +90,7 @@ body > p {
     justify-self: center;
     grid-template-columns: auto auto auto;
     background-color: #0B0B0E;
-    padding: 10px;
+    padding: 0.6rem;
     border-radius: 1rem;
   }
 
@@ -103,14 +103,14 @@ body > p {
   }
 
   #studentHist {
-    max-width: 400px;
+    max-width: 25rem;
 
   }
 
   .studentHist h2{
     display: block;
     justify-self: center;
-    font-size: 32px;
+    font-size: 2rem;
 
 
   }
@@ -133,7 +133,7 @@ body > p {
     width: 75%;
     border-radius: 1rem;
     color: #F2F5EA;
-    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.1); 
     overflow: hidden;
     border-collapse: separate;
     border-spacing: 0;
@@ -165,6 +165,29 @@ tbody {
     
 }
 
+@media (max-width: 768px) {
+    .praktisk_info {
+        width: 90%; 
+        margin: 1rem auto; 
+        font-size: 1rem;
+    }
+
+    .praktisk_info th, .praktisk_info td {
+        width: auto; 
+        padding: 0.5rem; 
+        font-size: 0.9rem; 
+    }
+
+    tbody {
+        padding: 0.5rem; 
+    }
+
+    .infoTable {
+        font-size: 1rem; 
+        overflow-x: auto; 
+    }
+}
+
 
 /* Bachelorprogram styling */
 #Bachelorprogram {
@@ -193,8 +216,8 @@ tbody {
     font-size: 1.4rem;
     padding: 0.2rem 0;
     padding-bottom: 1rem;
-    border-top: 0.0625rem solid #0B0B0E; 
-    border-bottom: 0.0625rem solid #0B0B0E; 
+    border-top: 0.06rem solid #0B0B0E; 
+    border-bottom: 0.06rem solid #0B0B0E; 
     display: block;
     justify-items: center;
 
@@ -227,7 +250,7 @@ tbody {
     
     
     border-radius: 1rem; 
-    box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 0.25rem 0.4rem rgba(0, 0, 0, 0.1); 
     padding: 1.5rem;
     width: 85%; 
     display:block;
@@ -251,7 +274,7 @@ tbody {
 #fagligLeder{
     vertical-align: left;
     display: inline;
-    width: 80px;
+    width: 5rem;
     color: #E75A7C;
     text-decoration: none;
 
@@ -319,49 +342,43 @@ tbody {
 
 
 /*-------Emne Tabell Styling------*/
-
-
-.emneTable caption{
-    font-size: 32px;
+.emneTable caption {
+    font-size: 4rem;
     justify-content: left;
     font-weight: 1000;
 }
 
-.emneTable{
+.emneTable {
     display: flexbox;
     justify-items: center;
     width: 75%;
-    overflow-x: auto;
+    overflow-x: auto; /* Tillat horisontal scrolling */
     margin-bottom: 1rem;
     margin-left: 10%;
     text-align: center;
     font-size: 1.25rem;
-    
 }
 
-.EmneGruppe{
+.EmneGruppe {
     background-color: #555;
-
 }
 
 .EmneGruppe tr {
     margin-bottom: 5rem;
     text-wrap: wrap;
-    
 }
 
-.emneTable table{
+.emneTable table {
     width: 75%;
-    
 }
-
 
 .emneTable thead {
-    background-color: #0e1012;
-    font-weight: 300;
-    
-} 
-.emneTable td, .emneTable tr,.emneTable th{
+    background-color: #3A5A40;
+    color: #FFFFFF; 
+    font-weight: bold; 
+}
+
+.emneTable td, .emneTable tr, .emneTable th {
     padding: 1rem;
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -369,15 +386,35 @@ tbody {
     color: #F2F5EA;
 }
 
-.emneTable a{
-
-    color:#E75A7C;
+.emneTable a {
+    color: #E75A7C;
 }
 
-.emneTable th{
+.emneTable th {
     font-weight: 5000;
     flex-wrap: wrap;
+}
 
+/* justering for mobil */
+@media (max-width: 768px) {
+    .emneTable {
+        width: 100%; /* Fyll hele bredden på små skjermer */
+        margin-left: 0; 
+        overflow-x: auto; 
+    }
+
+    .emneTable table {
+        width: 100%; 
+    }
+
+    .emneTable td, .emneTable th {
+        padding: 0.5rem; 
+        font-size: 1rem; 
+    }
+
+    .emneTable caption {
+        font-size: 1.5rem; 
+    }
 }
 
    
@@ -418,7 +455,7 @@ tbody {
 }
 
 .sportsBox h3 {
-    margin: 0.6rem 0;
+    margin: 0.5rem;
     color: inherit;
 }
 
@@ -523,9 +560,7 @@ footer nav a:hover {
 
 
 
-/* -------------Activity Page----------*/
-
-
+/*------------Accessability Page----------*/
 
 .accessibilityImages {
     max-width: 45%;
@@ -535,7 +570,6 @@ footer nav a:hover {
 
    max-width : 45%;
    display: inline;
-
 
 }
 
